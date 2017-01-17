@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body background="download.jpg">
+<title>Menu</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<LINK REL=StyleSheet HREF="new.css" TYPE="text/css" MEDIA=screen>
+<body>
+
+<div class="w3-container">
+  <h1>here are todays menus</h1>
+ 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="a46menu_dinner.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+    <br />
+    <figcaption> Dinner</figcaption>
+  </div>
+  <div class="w3-container w3-third">
+    <img src="lunch-menu2013.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+     <br />
+    <figcaption> Lunch</figcaption>
+  </div>
+  <div class="w3-container w3-third">
+    <img src="10002308.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+     <br />
+    <figcaption> Breakfast</figcaption>
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+            
+</body>
+</html>
