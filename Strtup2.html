@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Start up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <LINK REL=StyleSheet HREF="hello.css" TYPE="text/css" MEDIA=screen>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"  href="#">Spacers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Partners">Partners</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href= "#pageWrap">Animation</a></li>
+ 
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+   </li>
+     
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <div id="div1" class="fa"></div>
+      </ul>  
+
+      
+      <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    </div>
+  </div>
+  <div id="hh">
+ <script>
+	function hourglass() {
+  	var a;
+  	a = document.getElementById("div1");
+  	a.innerHTML = "&#xf251;";
+  	setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    	}, 1000);
+  	setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+	}
+	hourglass();
+	setInterval(hourglass, 3000);
+ </script>
+ </div>
+
+</nav>
+
+<div id="Home" class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAANVAAAAJDg3ODcxMWQ2LTQ2YWQtNDJhZi1iNTRkLTY5NGE3NGRiMzg3NA.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h2>Our H1 rocket</h2>
+            <p>Money Money.</p>
+          </div>      
+        </div>
+
+        <div class="item">
+          <img src="http://www.peimag.com/wp-content/uploads/2015/05/supercomputers.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h2>Supercomputer</h2>
+            <p>our calculater</p>
+          </div>      
+        </div>
+        </div>
+
+        <div class="2">
+          <img src="" alt="Image">
+          <div class="carousel-caption">
+            
+          </div>      
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="well">
+      <h4>Our Company helps with the calculations for rockets to fly and land on places like the moon, mars ect.</h4>
+    </div>
+   
+
+  </div>
+</div>
+<hr>
+</div>
+
+<div id="About" class="container text-center">    
+  <h1>What We Do</h1>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="http://mepag.jpl.nasa.gov/hightlight_images/mars2_115916c.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Current Project</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="https://31.media.tumblr.com/bf9c5994c024ce06f3276517fdf11490/tumblr_inline_nl2ul66GGX1re4v90.jpg" class="img-responsive" style="width:90%" alt="Image">
+      <p>Project 2</p>    
+    </div>
+    <div class="col-sm-4">
+      <div ss="well">
+       <h3>Our current project is to get a spaceship to land on mars</h3>
+      </div>
+      <div class="well">
+       <h3>"best company ever, will always recomend"-GOD</h3><l1>
+      </div>
+
+    </div>
+    
+  </div>
+  <hr>
+</div>
+
+<div id="Partners" class="container text-center">    
+  <h1>Owners and investers</h1>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+ 	  <img src="http://aib.edu.au/blog/wp-content/uploads/2015/08/bill-gates-jpg.jpg" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#BillGates @Cofounder</p>
+    </div>
+    <div class="col-sm-3"> 
+	  <img src="http://www.lachances.com/Tourhead/Asher/Rubnoses.jpg" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#Asher @whyshehere</p>    
+    </div>
+    <div class="col-sm-3"> 
+      <img src="http://i.imgur.com/8dHB1H4.jpg" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#astruanat @Ron </p>
+    </div>
+    <div class="col-sm-3"> 
+      <img src="http://cambridgeaeroclub.com/wp-content/uploads/2016/11/astro.jpg" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#astruanat @Dan</p>
+    </div> 
+    <div class="col-sm-3"> 
+      <img src="http://pre00.deviantart.net/4b5c/th/pre/f/2010/194/f/f/father_zeus_by_genzoman.jpg" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#Zeus @god</p>
+    </div>     
+    <div class="col-sm-3"> 
+      <img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/02/06/876/493/694940094001_5312294570001_5312252345001-vs.jpg?ve=1&tl=1" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#tombrady @invester</p>
+    </div> 
+    <div class="col-sm-3"> 
+      <img src="http://cmcrh.com.br/site/wp-content/uploads/2013/05/executive_search.png" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#randompeople @theydontworkhere</p>
+      </div>
+    <div class="col-sm-3"> 
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Nickelodeon_SpongeBob_SquarePants_Characters_Cast.png" class="img-circle" alt="Cinque Terre" width="250" height="150">
+      <p>#spongebob @moneyman</p>
+    </div>
+    </div>  
+    </div> 
+    </div> 
+  </div>
+  <div id="Contact" class="col-sm-12">
+    <div class="well">
+      <h3>call us a 925-555-2017 are email us at coolman23@gmail.com</h3>
+    </div>
+   </div>
+</div><br>
+
+
+<footer class="container-fluid text-center">
+  <p id="demo"></p>
+
+
+
+<div id="gg">
+<script>
+
+
+
+
+var countDownDate = new Date("Feb 14, 2017 02:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+function goBack() {
+    window.history.back()
+}
+</script>
+</div>
+<input type="button" value="Back" onclick="goBack()">
+
+
+
+
+<div id="pageWrap">
+<svg version="1.1" x="0px" y="0px" width="307px" height="283px" id="rocket">
+
+<g class="rocket_wrap">
+
+<circle cx="147.5" cy="138.6" r="105.5" class="icon_circle"/>
+
+<g class="rocket_inner">
+
+<path class="fire fire_path"  id="fireMiddle" d="M148.891,179.906c3.928,0,7.111,3.176,7.111,7.094 c0,7.78-7.111,16-7.111,16s-7.111-8.349-7.111-16C141.78,183.082,144.963,179.906,148.891,179.906z"/>
+
+
+
+<path class="fire_path fire" id="fireRight" d="M154.063,181.092c3.577-1.624,7.788-0.048,9.408,3.52 c3.216,7.084,0.139,17.508,0.139,17.508s-9.927-4.662-13.09-11.63C148.9,186.923,150.487,182.715,154.063,181.092z"/>
+
+
+<path class="fire_path fire" id="fireLeft" d="M143.392,182.519c3.25,2.207,4.098,6.623,1.896,9.864 c-4.372,6.436-14.873,9.238-14.873,9.238s-1.191-10.902,3.108-17.23C135.725,181.149,140.143,180.312,143.392,182.519z"/>
+
+
+
+<path class="fire_path fire" id="fireSmallLeft" d="M143.193 187.531c2.226 0.4 3.7 2.6 3.2 4.8 c-0.875 4.407-5.829 8.264-5.829 8.264s-3.09-5.53-2.229-9.865C138.807 188.5 141 187.1 143.2 187.531z"/>
+
+
+
+<path class="fire_path fire" id="fireSmallRight" d="M152.089 188.599c2.043-0.985 4.496-0.132 5.5 1.9 c1.952 4 0.3 10.1 0.3 10.107s-5.795-2.56-7.713-6.541C149.186 192 150 189.6 152.1 188.599z"/>
+
+
+<path class="rocket_bottom" d="M157.069 171.31h-3.292c-1.562-0.048-3.178-0.076-4.846-0.076 s-3.284 0.028-4.846 0.076h-3.292c-7.277-7.938-12.371-26.182-12.371-47.434c0-28.54 9.182-51.676 20.508-51.676 c11.327 0 20.5 23.1 20.5 51.676C169.44 145.1 164.3 163.4 157.1 171.31z"/>
+
+<g id="right_wing_wrap">
+<path class="wing_base" d="M166.678 127.161c0 0 17.7 3.3 12.9 48.099l-18.06-14.05 L166.678 127.161z"/>
+<path class="wing_shadow" d="M158.225 140.336c10.481-5.584 22.7 22.2 21.4 34.9 l-18.06-14.05C161.542 161.2 156.1 144.3 158.2 140.336z"/>
+</g>
+
+<g id="left_wing_wrap">
+<path class="wing_base" d="M135.131 161.21l-18.06 14.1 c-4.805-44.793 12.924-48.099 12.924-48.099L135.131 161.21z"/>
+<path class="wing_shadow" d="M135.131 161.21l-18.06 14.1 c-1.367-12.746 10.896-40.509 21.377-34.924C140.614 144.3 135.1 161.2 135.1 161.21z"/>
+</g>
+
+<g id="rocket_body_wrap">
+<path class="rocket_base" d="M162.728 167.358c-3.778-0.623-8.573-0.996-13.796-0.996 s-10.018 0.373-13.795 0.996c-5.033-10.186-8.257-25.808-8.257-43.338c0-30.688 9.873-55.566 22.052-55.566 s22.053 24.9 22.1 55.566C170.984 141.6 167.8 157.2 162.7 167.358z" />
+<path class="rocket_shadow" d="M145.464 166.417c19.578-40.575 7.26-85.229 4.112-98.067 c11.88 0.9 21.4 25.4 21.4 55.525c0 17.529-3.225 33.152-8.257 43.337c0 0-3.786-0.472-8.069-0.697 S145.464 166.4 145.5 166.417z"/>
+</g>
+
+<g id="large_window_wrap">
+<radialgradient id="SVGID_2_" cx="148.9" cy="112.5" r="15.2" fx="139.4853" fy="112.5239" gradientunits="userSpaceOnUse">
+<stop offset="0" class="window_grandient"/>
+<stop offset="0.5868" class="window_grandient"/>
+<stop offset="0.6834" class="window_grandient"/>
+<stop offset="0.6845" class="window_grandient1"/>
+<stop offset="0.6861" class="window_grandient2"/>
+<stop offset="0.6897" class="window_grandient3"/>
+</radialgradient>
+<circle class="large_window_path" cx="148.9" cy="111.3" r="10.5"/>
+</g>
+
+<circle class="small_window_path" cx="148.9" cy="132.4" r="5.2"/>
+
+
+
+</g>
+
+</g>
+</svg>
+</div>
+</footer>
+
+</body>
+</html>
